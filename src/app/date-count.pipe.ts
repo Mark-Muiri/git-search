@@ -23,7 +23,7 @@ export class DateCountPipe implements PipeTransform {
         let counter;
         // tslint:disable-next-line: forin
         for (const i in intervals) {
-            counter = Math.floor(seconds );
+            counter = Math.floor(seconds);
             if (counter > 0) {
                 if (counter === 1) {
                     return counter + ' ' + i + ' ago';
@@ -37,3 +37,4 @@ export class DateCountPipe implements PipeTransform {
 }
 
 }
+
